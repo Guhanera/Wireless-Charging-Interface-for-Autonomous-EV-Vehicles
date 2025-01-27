@@ -13,8 +13,8 @@ except:
 import gc
 import BlynkLib
 
-BLYNK_AUTH ="xRs8L4myUGMwESkcsUFUYd_DP6l5i00e"
-card='839696650143'
+BLYNK_AUTH =""
+card=''
 
 #16x2 LCD
 i2c = I2C(1, sda=Pin(18), scl=Pin(19), freq=40000)
@@ -22,8 +22,8 @@ I2C_ADDR = i2c.scan()[0]
 lcd = I2cLcd(i2c, I2C_ADDR, 2, 16)
 
 #WiFi Connection
-ssid = 'Redmi Note 11S'
-password = '12345678'
+ssid = '  '
+password = ''
 
 def connect_wifi(ssid, password):
   station = network.WLAN(network.STA_IF)
@@ -40,7 +40,7 @@ def connect_wifi(ssid, password):
 connect_wifi(ssid, password)
 
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
-firebase.setURL("https://ev-charging-60202-default-rtdb.firebaseio.com/")
+firebase.setURL("")
 
 #LCD Button
 button = Pin(0, Pin.IN, Pin.PULL_UP)
