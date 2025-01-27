@@ -17,12 +17,12 @@ import time
 import utime
 
 # Wi-Fi Credentials
-SSID = 'Redmi Note 11S'
-PASSWORD = '12345678'
+SSID = USERNAME
+PASSWORD = PASSWORD
 
 # Firebase Configuration
-FIREBASE_URL = 'https://ev-charging-60202-default-rtdb.firebaseio.com/'
-FIREBASE_SECRET = 'd9j9RlblPtBiSmfx9aXh19vWxOxQUuCvYqjSCpfw'
+FIREBASE_URL = 
+FIREBASE_SECRET = 
 
 #LCD Config
 I2C_ADDR = 0x27
@@ -59,10 +59,10 @@ def connect_to_wifi():
     print("IP address:", wlan.ifconfig()[0])
 
 #SMS Parameters
-account_sid = 'ACf7e127987438806dc425307e0a1dc996'
-auth_token = '2e196fbef276125835845d60c7f5beb6'
-recipient_num = '+919994058429'
-sender_num = '+12164466886'
+account_sid = ''
+auth_token = ''
+recipient_num = 
+sender_num =
 
 def send_sms(recipient, sender,
              message, auth_token, account_sid):
